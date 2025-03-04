@@ -14,7 +14,7 @@ public class GetListUserOperationClaimQuery : IRequest<GetListResponse<GetListUs
 {
     public PageRequest PageRequest { get; set; }
 
-    public string[] Roles => [UserOperationClaimsOperationClaims.Read];
+    public string[] Roles => new[] {UserOperationClaimsOperationClaims.Read};
 
     public GetListUserOperationClaimQuery()
     {
